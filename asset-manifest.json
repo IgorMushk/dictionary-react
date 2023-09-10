@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/dictionary-react/static/css/main.75968021.css",
-    "main.js": "/dictionary-react/static/js/main.20fa6214.js",
+    "main.js": "/dictionary-react/static/js/main.06b85370.js",
     "index.html": "/dictionary-react/index.html",
     "main.75968021.css.map": "/dictionary-react/static/css/main.75968021.css.map",
-    "main.20fa6214.js.map": "/dictionary-react/static/js/main.20fa6214.js.map"
+    "main.06b85370.js.map": "/dictionary-react/static/js/main.06b85370.js.map"
   },
   "entrypoints": [
     "static/css/main.75968021.css",
-    "static/js/main.20fa6214.js"
+    "static/js/main.06b85370.js"
   ]
 }
