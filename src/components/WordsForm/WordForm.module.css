@@ -3,3 +3,8 @@
     flex-direction: column;
     gap: 20px;
 }
+
+.wordsFormWrapper {
+    width: 350px;
+    margin: 20px auto;
+}
