@@ -6,6 +6,10 @@ import WordsList from './WordsList/WordsList';
 import FilterWords from './FilterWords/FilterWords';
 
 export default class App extends Component {
+  // constructor(){
+  //   super();
+  //   this.formSubmit = this.formSubmit.bind(this);
+  //}
   state = {
     words: [],
     filter: '',
@@ -17,10 +21,19 @@ export default class App extends Component {
   // Нужно передавать callback функцию, а не объект
   // callback будет возвращать объект
   formSubmit = newWord => {
+  //formSubmit(newWord) {
     this.setState(prevState => ({
       words: [...prevState.words, newWord],
-    }));
+    }),()=>console.log(this.state.words) );
+    // вопрос - асинхронная операция. При завпуске приложени и первом submit, как вывести обновленный state
+    // Нужно передать 2-ым аргументом еще один callback
+    // console.log(this.state.words)
   };
+
+  // Если заменить стрелочную на декларотивную  
+  // Устрелочной функции нет своего контекста и она берет у парента в помент обьявления, а не вызова
+  // formSubmit(newWord) {}
+  // Как вариант забаиндить конестект в конструкторе
 
   handleDelete = id => {
     this.setState(prevState => ({
