@@ -1,0 +1,17 @@
+.wordsListWrapper {
+    width: 350px;
+    margin: 20px auto;
+}
+
+.wordsList {
+    padding-left: 0;
+}
+
+.itemWord {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;;
+    font-size: 24px;
+    margin-bottom: 4px;
+}

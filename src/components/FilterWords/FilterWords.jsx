@@ -1,9 +1,10 @@
 import React from 'react';
 import TextField from '@mui/material/TextField';
+import css from './FilterWords.module.css'
 
 export default function FilterWords({onChange}) {
   return (
-    <div>
+    <div className={css.filterWrapper}>
       <TextField
         id="outlined-basic"
         label="Filter"
