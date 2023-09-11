@@ -8,7 +8,7 @@ const WordsList = ({ words, wordDelete }) => {
     <ul className={css.wordsList}>
         {words.map((word) => (<li className={css.itemWord} key={word.id}><span>{word.ukWord}</span>:<span>{word.enWord}</span>
             {/* <button onClick={()=>wordDelete(word.id)}>Delete</button> */}
-            <Button variant="contained" onClick={()=>wordDelete(word.id)}>Button</Button>
+            <Button variant="contained" onClick={()=>wordDelete(word.id)}>Delete</Button>
             </li>)
         )}
     </ul>
